@@ -47,17 +47,17 @@
     "origin": {
       "type": "enumeration",
       "enum": [
-        "Africa",
-        "Asia",
-        "America",
-        "Europa"
+        "Marcala",
+        "Copán",
+        "Comayagua"
       ]
     },
-    "taste": {
+    "roast": {
       "type": "enumeration",
       "enum": [
-        "sweet",
-        "citric"
+        "Claro",
+        "Mediano",
+        "Oscuro"
       ]
     },
     "isFeatured": {
@@ -66,9 +66,8 @@
     },
     "category": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "products"
+      "relation": "oneToOne",
+      "target": "api::category.category"
     }
   }
 }
