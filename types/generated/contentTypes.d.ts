@@ -595,6 +595,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     slug: Schema.Attribute.UID<'name'>;
     description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'>;
+    shortDescription: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;

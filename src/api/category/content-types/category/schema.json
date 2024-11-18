@@ -29,6 +29,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "shortDescription": {
+      "type": "string"
     }
   }
 }

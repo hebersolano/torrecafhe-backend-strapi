@@ -1,3 +1,5 @@
+* Create custum endpoint: https://strapi.io/blog/how-to-create-a-custom-api-endpoint-in-strapi
+
 # 🚀 Getting started with Strapi
 
 - [Strapi REST](https://docs.strapi.io/dev-docs/api/rest)

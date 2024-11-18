@@ -37,7 +37,7 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
               currency: "USD",
               unit_amount: Math.round(item.price * 100),
             },
-            quantity: 1,
+            quantity: product.quantity,
           };
         })
       );
