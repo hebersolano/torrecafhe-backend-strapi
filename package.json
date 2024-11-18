@@ -12,22 +12,22 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/database": "^5.0.2",
-    "@strapi/plugin-cloud": "5.0.1",
-    "@strapi/plugin-users-permissions": "5.0.1",
-    "@strapi/strapi": "5.0.1",
-    "fs-extra": "^10.1.0",
+    "@strapi/database": "^5.4.0",
+    "@strapi/plugin-cloud": "5.4.0",
+    "@strapi/plugin-users-permissions": "5.4.0",
+    "@strapi/strapi": "5.4.0",
+    "fs-extra": "^11.2.0",
     "mime-types": "^2.1.35",
-    "pg": "^8.13.0",
+    "pg": "^8.13.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.2",
-    "stripe": "^17.1.0",
+    "react-router-dom": "^6.28.0",
+    "stripe": "^17.3.1",
     "styled-components": "^6.1.13"
   },
   "devDependencies": {
-    "@types/node": "^20.16.9",
-    "@types/react": "^18.3.9",
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.6.2"
   },
