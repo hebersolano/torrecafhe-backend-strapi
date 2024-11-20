@@ -17,17 +17,6 @@ export default factories.createCoreController("api::order.order", ({ strapi }) =
       const lineitems = await Promise.all(
         products.map(async function (product) {
           const item = await productService.findOne(product.documentId);
-          // console.log("item product service", item.productName);
-          // const stripeProduct = await stripe.products.create({
-          //   name: item?.productName as string,
-          //   default_price_data: {
-          //     currency: "USD",
-          //     unit_amount: Math.round(item.price * 100),
-          //   },
-          //   type: "good",
-          // });
-
-          // console.log("stripe product", stripeProduct);
 
           return {
             price_data: {
