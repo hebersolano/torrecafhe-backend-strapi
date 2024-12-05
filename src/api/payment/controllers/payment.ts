@@ -17,15 +17,16 @@ const paymentControllers: PaymentControllers = {
       let paymentIntent;
 
       console.log("reqStripeCk cookie", amount, reqStripeCk);
-      if (!amount) throw new Error("Requirements not fulfilled");
+      if (!amount && typeof amount !== "number") throw new Error("Requirements not fulfilled");
+      const stripeAmount = amount * 100;
 
       if (reqStripeCk.cs) {
         paymentIntent = await stripe.paymentIntents.update(reqStripeCk.id, {
-          amount,
+          amount: stripeAmount,
         });
       } else {
         paymentIntent = await stripe.paymentIntents.create({
-          amount,
+          amount: stripeAmount,
           currency: "usd",
           automatic_payment_methods: {
             enabled: true,

@@ -62,6 +62,20 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface UserUserInfo extends Struct.ComponentSchema {
+  collectionName: 'components_user_user_infos';
+  info: {
+    displayName: 'User Info';
+    icon: 'user';
+  };
+  attributes: {
+    address: Schema.Attribute.String;
+    details: Schema.Attribute.JSON;
+    firstName: Schema.Attribute.String;
+    lastName: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -70,6 +84,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'user.user-info': UserUserInfo;
     }
   }
 }
